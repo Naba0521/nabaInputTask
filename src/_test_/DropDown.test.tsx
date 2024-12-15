@@ -20,9 +20,15 @@ describe('Dropdowncomponent',()=>{
         {name: "Australia",flag: "https://flagcdn.com/w320/au.png",capital: "Canberra",population: "26 million",information:"Australia is an island country and continent, known for its wildlife, beaches, and vibrant multicultural cities.",},
       ]
       const MockSetSelectedCountry=jest.fn()
-
+    const MockSelectedCountry={
+      name: "string",
+      flag: "string",
+      information: "string",
+      capital: "string",
+      population: "string"
+ };
     it('click dropdown countries',()=>{
-        const{getByTestId}=render(<Dropdown filteredCountries={MockFilteredCountries} setSelectedCountry={MockSetSelectedCountry}/>)
+        const{getByTestId}=render(<Dropdown filteredCountries={MockFilteredCountries} setSelectedCountry={MockSetSelectedCountry} selectedCountry={MockSelectedCountry}/>)
         const selectCountry=getByTestId('selectCountry-0')
         fireEvent.click(selectCountry)
         const selectCountry1=getByTestId('selectCountry-1')

@@ -132,6 +132,7 @@ export const SearchInputComponent = () => {
           <Dropdown
             filteredCountries={filteredCountries}
             setSelectedCountry={setSelectedCountry}
+            selectedCountry={selectedCountry}
           />
         )}
       </div>
