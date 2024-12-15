@@ -72,7 +72,7 @@ export const SearchInputComponent = () => {
   }, [selectedCountries]);
 
   return (
-    <div className="flex pl-[500px] min-h-screen p-8 pb-20 gap-16">
+    <div className="flex pl-[100px] min-h-screen p-8 pb-20 gap-16">
       <div className="flex flex-col gap-4">
         <div className="flex items-center justify-center p-4 bg-blue-500 text-white text-lg font-medium rounded-xl shadow-md hover:bg-blue-600 transition-all duration-300">
           Please select a country you'd like to know more about
